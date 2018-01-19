@@ -1,0 +1,41 @@
+h4{
+    font-size:24px;
+    margin-top: 30px;
+    margin-left: 40px;
+    margin-bottom:30px;
+    font-family:Helvetica;
+}
+p{
+    font-size:20px;
+    font-family:Helvetica;
+    text-align:left;
+    margin-left:20px;
+    font-weight:300;
+    padding: 0px 20px 0 20px;
+}
+th {
+    font-size: 27px;
+    font-family: Helvetica;
+    color: #6e157d;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+td {
+    padding-left: 20px;
+    padding-top: 15px;
+    font-size: 20px;
+    font-family: Helvetica;
+    font-weight: 300;
+}
+label {
+    border: 2px solid #323334;
+    width: 20px;
+    height: 20px;
+    left: 30px;
+    position: absolute;
+    border-radius: 50%;
+}
+input[type='radio'] {
+    margin-right: 20px;
+    opacity: 0;
+}

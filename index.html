@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>WBT</title>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+	</head>
+	<body>
+		<div class="header">
+			<div class="container">
+				<div class="brand">WBT</div>
+				<div class="menu"><img src="img/menu.png"></div>	
+			</div>
+			<div class="sub_header">
+				<div class="container">
+					<ul>
+						<li><a href="#"><img src="img/home.png"><div>Homepage</div></a></li>
+						<li><a href="#"><img src="img/home.png"><div>Impostazioni</div></a></li>
+						<li><a href="#"><img src="img/home.png"><div>Log Out</div></a></li>
+					</ul>
+				</div>
+			</div>	
+		</div>
+		<div class="content">
+			<div class="container">
+				<h1 class="title_section">Benvenuto</h1>
+				<div class="welcome_box">
+					<h3>Benvenuto in questo corso online</h3>
+					<p>Premi "INIZIA" per cominciare il test!</p>
+					<button class="wbt_btn" onclick="start();">INZIA</button>	
+				</div>
+				<iframe src="slides/0/index.html" class="slide_container"></iframe>
+			</div>	
+		</div>
+		<div class="footer">
+			<div class="container">
+				<div class="navigation">
+					<button class="nav_prev" onclick="goPrev();"><img src="img/prev.png"></button>
+					<div class="nav_slide_counter"></div>
+					<button class="nav_next" onclick="goNext();"><img src="img/next.png"></button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/navigator.js"></script>
+	<script type="text/javascript">
+		//write code here
+		function start(){
+			$(".welcome_box").fadeOut(600);
+			$(".welcome_box").remove();
+			$(".title_section, .slide_container, .navigation").fadeIn();
+		}
+	</script>
+</html>
